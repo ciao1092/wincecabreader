@@ -456,6 +456,9 @@ namespace wincecabreader
             Console.WriteLine("REGKEYS:");
             try
             {
+                // TODO: this section was buggy, so I "exception-ed" it out for now, since I did not need it.
+                throw new Exception("Reading REGKEYS is not implemented...");
+
                 Dictionary<ushort, RegKeyEntry> REGKEYS = [];
                 for (int i = 0; i < _regKeysCount; i++)
                 {
